@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Dialer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dialer">
+        <h2>Call Dialer</h2>
+        <input type="tel" id="phoneNumber" placeholder="Enter phone number">
+        <div class="buttons">
+            <button onclick="dialNumber('1')">1</button>
+            <button onclick="dialNumber('2')">2</button>
+            <button onclick="dialNumber('3')">3</button>
+            <button onclick="dialNumber('4')">4</button>
+            <button onclick="dialNumber('5')">5</button>
+            <button onclick="dialNumber('6')">6</button>
+            <button onclick="dialNumber('7')">7</button>
+            <button onclick="dialNumber('8')">8</button>
+            <button onclick="dialNumber('9')">9</button>
+            <button onclick="dialNumber('*')">*</button>
+            <button onclick="dialNumber('0')">0</button>
+            <button onclick="dialNumber('#')">#</button>
+        </div>
+        <button class="call-btn" onclick="showCallingScreen()">📞 Call</button>
+    </div>
+
+    <!-- Calling Screen -->
+    <div id="callingScreen" class="hidden">
+        <div class="calling-animation"></div>
+        <h2>Calling...</h2>
+        <p id="callNumber"></p>
+        <button class="end-call" onclick="endCall()">❌ End Call</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
